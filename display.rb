@@ -22,7 +22,7 @@ class Display
   end
 
   def remaining_HP
-    puts "#{@player1.name}'s current HP: #{render_hearts(@player2.hitpoints)}"
+    puts "#{@player1.name}'s current HP: #{render_hearts(@player1.hitpoints)}"
     puts "#{@player2.name}'s current HP: #{render_hearts(@player2.hitpoints)}"
   end
 
