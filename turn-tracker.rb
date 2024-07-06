@@ -5,11 +5,12 @@ puts '... loaded turn tracker'
 class Turn
   def initialize(current_player)
     @current_player = current_player
+    puts "\n------------- #{@current_player.name}'s turn now -------------"
   end
 
   # Toggles the currently active player to the other one
   def alternate(player1, player2)
-    
+
     if @current_player == player1
       @current_player = player2
     elsif @current_player == player2
