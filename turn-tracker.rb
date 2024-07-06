@@ -7,6 +7,18 @@ class Turn
     @current_player = current_player
   end
 
+  # Toggles the currently active player to the other one
+  def alternate(player1, player2)
+    
+    if @current_player == player1
+      @current_player = player2
+    elsif @current_player == player2
+      @current_player = player1
+    end
+
+    puts "\n------------- #{@current_player.name}'s turn now -------------"
+  end
+
   attr_accessor :current_player
 
 end
